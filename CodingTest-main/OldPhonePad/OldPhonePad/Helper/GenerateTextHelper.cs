@@ -21,7 +21,7 @@ namespace OldPhonePad.Helper
         public static string OldPhonePad(string input)
         {
             if (string.IsNullOrEmpty(input) || input[^1] != '#')
-                return "";
+                return input;
 
             input = input.TrimEnd('#');
 
